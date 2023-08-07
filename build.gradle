@@ -1,0 +1,12 @@
+// Check GETTING_STARTED.markdown for information regarding usage.
+
+subprojects {
+    plugins.withType(JavaPlugin).whenPluginAdded {
+        dependencies {
+            testImplementation group: "org.junit.jupiter", name: "junit-jupiter-api", version: "5.9.3"
+
+            testImplementation group: "org.mockito", name: "mockito-core", version: "5.2.0"
+            testImplementation group: "org.mockito", name: "mockito-inline", version: "5.2.0"
+        }
+    }
+}
